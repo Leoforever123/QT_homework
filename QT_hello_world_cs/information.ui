@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>information</class>
+ <widget class="QWidget" name="information">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>576</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>70</y>
+     <width>881</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>据一本神秘的书籍记载，很久以前，Oliver是人们所信仰的神明，
+Feardorchae是无恶不作的Feardorchae。
+偶然的机会，Feardorchae来到了这个世界，给这片大陆上的人们带来了恐惧与痛苦。
+Oliver为了保护人们，与R以及B的手下不断产生冲突。
+在最终的决战中，Oliver打败了Feardorchae，但Oliver十分虚弱，
+并且祂的追随者仍在与Feardorchae的手下战斗。
+因此Oliver将自己的记忆与力量都封存了起来，但做完这些之后Oliver已经失去了意识。
+现在，Oliver的灵魂转世成为一个18岁的青年，他仍然叫Oliver，生活在若里村。
+Oliver少年时父母双亡，被当地的教会收养。Oliver幼年时性格随意，但生性善良。
+当地教会信仰Oliver，尽管当年的大战中人们都传说Oliver与Feardorchae都彻底地毁灭了，
+但教会仍然虔诚地信仰着Oliver。
+Oliver常常对未来感到迷茫，他每天最喜欢在海边发呆，生活似乎就这么平静的进行下去
+......在这个游戏中，Oliver的许多行为都会对结局产生影响。祝你好运，Oliver。</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>490</y>
+     <width>71</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>继续</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

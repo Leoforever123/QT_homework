@@ -1,0 +1,91 @@
+<RCC>
+    <qresource prefix="/character">
+        <file>img/character/braver.png</file>
+        <file>img/character/businessman.png</file>
+        <file>img/character/crazyman.png</file>
+        <file>img/character/fishman.png</file>
+        <file>img/character/grandma.png</file>
+        <file>img/character/ironman.png</file>
+        <file>img/character/magicwoman.png</file>
+        <file>img/character/braver_head.png</file>
+        <file>img/character/icesoldier.png</file>
+        <file>img/character/icesoldier_r.png</file>
+        <file>img/character/badman.png</file>
+        <file>img/character/badman_r.png</file>
+        <file>img/character/dacula.png</file>
+        <file>img/character/authors.png</file>
+        <file>img/character/static-l.png</file>
+        <file>img/character/static-r.png</file>
+    </qresource>
+    <qresource prefix="/map/mainwindow">
+        <file>img/map/mainwindow/dawn.jpg</file>
+        <file>img/map/mainwindow/dusk.jpg</file>
+        <file>img/map/mainwindow/evening.jpg</file>
+        <file>img/map/mainwindow/gamename.png</file>
+        <file>img/map/fog.jpg</file>
+    </qresource>
+    <qresource prefix="/map/rolig village">
+        <file>img/map/rolig village/inside_iron_man's.jpg</file>
+        <file>img/map/rolig village/inside_magichouse.jpg</file>
+        <file>img/map/rolig village/inside_shop.jpg</file>
+        <file>img/map/rolig village/iron_man's.png</file>
+        <file>img/map/rolig village/magichouse.png</file>
+        <file>img/map/rolig village/rolig_village_beach.png</file>
+        <file>img/map/rolig village/rolig_village_main_map.png</file>
+        <file>img/map/rolig village/shop.png</file>
+        <file>img/map/rolig village/rolig_village_main_map&amp;NPC.png</file>
+        <file>img/map/onthesea.png</file>
+    </qresource>
+    <qresource prefix="/weapon&amp;book">
+        <file>img/weapon&amp;book/firesword.png</file>
+        <file>img/weapon&amp;book/longsword.png</file>
+        <file>img/weapon&amp;book/magicbook1.png</file>
+        <file>img/weapon&amp;book/magicbook2.png</file>
+    </qresource>
+    <qresource prefix="/button">
+        <file>img/button/longbutton.png</file>
+        <file>img/button/squarebutton1.png</file>
+        <file>img/button/muban.jpg</file>
+        <file>img/button/muban2.jpg</file>
+        <file>img/box/box1.png</file>
+        <file>img/box/god_box.png</file>
+    </qresource>
+    <qresource prefix="/icon">
+        <file>img/icon/quit.png</file>
+        <file>img/icon/white.png</file>
+        <file>img/icon/magicshake.png</file>
+    </qresource>
+    <qresource prefix="/map">
+        <file>img/map/flammande dalen.jpg</file>
+        <file>img/map/Gullbyen.jpg</file>
+        <file>img/map/iskalde_landet.jpg</file>
+        <file>img/map/map.png</file>
+        <file>img/map/banished.jpg</file>
+        <file>img/map/iceberg.png</file>
+        <file>img/map/ice.jpg</file>
+        <file>img/map/bgimg.png</file>
+    </qresource>
+    <qresource prefix="/mp3">
+        <file>mp3/05 - Greenpath.mp3</file>
+        <file>mp3/06 - Hornet.mp3</file>
+        <file>mp3/09 - City of Tears.mp3</file>
+        <file>mp3/end.mp3</file>
+    </qresource>
+    <qresource prefix="/wav">
+        <file>wav/hover.wav</file>
+        <file>wav/running.wav</file>
+    </qresource>
+    <qresource prefix="/water">
+        <file>img/water/water1.jpg</file>
+        <file>img/water/water2.jpg</file>
+        <file>img/water/water3.jpg</file>
+        <file>img/water/water4.jpg</file>
+        <file>img/water/water5.jpg</file>
+    </qresource>
+    <qresource prefix="/sea">
+        <file>img/map/rolig_village_beach1.png</file>
+        <file>img/map/rolig_village_beach2.png</file>
+        <file>img/map/rolig_village_beach3.png</file>
+        <file>img/map/rolig_village_beach4.png</file>
+    </qresource>
+</RCC>

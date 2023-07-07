@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>rolig_village</class>
+ <widget class="QMainWindow" name="rolig_village">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>865</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="crazyman">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>250</y>
+      <width>92</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>疯子</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="grandma">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>400</y>
+      <width>92</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>老婆婆</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ironmanhouse">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>190</y>
+      <width>92</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>铁匠屋</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="magichouse">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>200</y>
+      <width>92</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>魔法屋</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="shop">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>190</y>
+      <width>92</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>商店</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="gotosea">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>360</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>去往海边</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>865</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_choice">
+    <property name="title">
+     <string>选项</string>
+    </property>
+    <addaction name="actionsettings"/>
+    <addaction name="actionexit"/>
+   </widget>
+   <widget class="QMenu" name="menubangzhu">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="actionset"/>
+    <addaction name="note"/>
+   </widget>
+   <addaction name="menu_choice"/>
+   <addaction name="menubangzhu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="minimumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+  </widget>
+  <action name="actionsettings">
+   <property name="text">
+    <string>游戏设置</string>
+   </property>
+  </action>
+  <action name="actionexit">
+   <property name="text">
+    <string>存档并退出</string>
+   </property>
+  </action>
+  <action name="actionset">
+   <property name="text">
+    <string>游戏设定</string>
+   </property>
+  </action>
+  <action name="note">
+   <property name="text">
+    <string>提示</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
