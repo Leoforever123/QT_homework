@@ -54,6 +54,7 @@
         <file>img/icon/quit.png</file>
         <file>img/icon/white.png</file>
         <file>img/icon/magicshake.png</file>
+        <file>img/icon/black.png</file>
     </qresource>
     <qresource prefix="/map">
         <file>img/map/flammande dalen.jpg</file>
@@ -70,6 +71,7 @@
         <file>mp3/06 - Hornet.mp3</file>
         <file>mp3/09 - City of Tears.mp3</file>
         <file>mp3/end.mp3</file>
+        <file>mp3/sea.mp3</file>
     </qresource>
     <qresource prefix="/wav">
         <file>wav/hover.wav</file>

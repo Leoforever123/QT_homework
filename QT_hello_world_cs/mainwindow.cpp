@@ -44,8 +44,11 @@ MainWindow::MainWindow(QWidget *parent)
     player->setAudioOutput(audio);
     player->setSource(QUrl("qrc:/mp3/mp3/05 - Greenpath.mp3"));
     audio->setVolume(0.5);
-    player->setLoops(1);
+    player->setLoops(-1);
     player->play();
+
+    blacktimer= new QTimer(this);
+    connect(blacktimer,&QTimer::timeout,this,&MainWindow::show_new_village);
 }
 
 void MainWindow::init_mainwindow()//用于初始化开始界面
@@ -103,12 +106,26 @@ MainWindow::~MainWindow()
 void MainWindow::on_newgame_clicked()
 {
     Oliver::audio->play(2);
+    QWidget* black = new QWidget(this);
+    black->setFixedSize(1024,576);
+    black->show();
+    set_context(black,":/icon/img/icon/black.png");
+    blacktimer->start(2000);
+    grad_animation(black,2000,0,1,1);
+
+}
+void MainWindow::show_new_village(){
     information* info=new information();
     this->hide();
-    rolig->show();
+    blacktimer->stop();
+    QWidget* black = new QWidget(info);
+    black->setFixedSize(1024,576);
+    black->show();
+    set_context(black,":/icon/img/icon/black.png");
+    grad_animation(black,2000,1,0,1);
     info->show();
+    connect(info,&information::conti,rolig,&QWidget::show);
 }
-
 
 void MainWindow::on_settings_clicked()
 {

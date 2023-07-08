@@ -19,6 +19,7 @@ information::~information()
 void information::on_pushButton_clicked()
 {
     Oliver::audio->play(2);
+    emit conti();
     delete this;
 }
 

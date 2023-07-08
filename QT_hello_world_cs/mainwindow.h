@@ -27,6 +27,8 @@ public:
     int img_choice;
     QString gamename;
     void img_change();
+    void show_new_village();
+    QTimer* blacktimer;
 
     //子窗口
     rolig_village* rolig;

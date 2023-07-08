@@ -141,7 +141,6 @@ void map::on_banished_clicked()
             ice->show();
             delete this->parentWidget()->parentWidget();
         });
-
         return;
     }
     else
@@ -150,7 +149,5 @@ void map::on_banished_clicked()
         ice->show();
         delete this->parentWidget()->parentWidget();
     }
-
-
 }
 

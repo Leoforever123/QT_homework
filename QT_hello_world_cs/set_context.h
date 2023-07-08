@@ -7,6 +7,7 @@
 #include <QPushButton>
 #include <QLabel>
 #include "oliver.h"
+#include <QTimer>
 //用来设置窗口背景
 inline void set_context(QWidget* ptr,QString filename)
 {
@@ -19,8 +20,9 @@ inline void set_context(QWidget* ptr,QString filename)
     ptr->setPalette(painter);
 }
 //动画效果
-inline void grad_animation(QWidget* process,int time,double start=0,double end=1)
+inline void grad_animation(QWidget* process,int time,double start=0,double end=1,bool judge=0)
 {
+    QTimer* timer = new QTimer(process);
     QGraphicsOpacityEffect* widgetOpacity=new QGraphicsOpacityEffect(process);
     widgetOpacity->setOpacity(0);
     process->setGraphicsEffect(widgetOpacity);
@@ -30,6 +32,12 @@ inline void grad_animation(QWidget* process,int time,double start=0,double end=1
     processopacity->setStartValue(start);
     processopacity->setEndValue(end);
     processopacity->start(QAbstractAnimation::KeepWhenStopped);
+    timer->start(time);
+    if(judge==1){
+        QAbstractAnimation::connect(timer,&QTimer::timeout,[process](){
+            delete process;
+        });
+    }
 }
 
 //用于设置按钮背景

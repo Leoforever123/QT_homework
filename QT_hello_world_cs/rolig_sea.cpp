@@ -5,6 +5,7 @@
 #include <QDialog>
 #include "outsea.h"
 #include "dialog.h"
+#include "mainwindow.h"
 
 QString rolig_sea::seaimg[4]={
     ":/sea/img/map/rolig_village_beach1.png",
@@ -52,6 +53,11 @@ rolig_sea::rolig_sea(QWidget *parent) :
     sea=0;
     seatimer->start(600);
 
+    //播放器
+    MainWindow::player->stop();
+    MainWindow::player->setSource(QUrl("qrc:/mp3/mp3/sea.mp3"));
+    MainWindow::player->play();
+
 }
 
 rolig_sea::~rolig_sea()
@@ -62,6 +68,9 @@ rolig_sea::~rolig_sea()
 void rolig_sea::on_back_clicked()
 {
     Oliver::audio->play(2);
+    MainWindow::player->stop();
+    MainWindow::player->setSource(QUrl("qrc:/mp3/mp3/05 - Greenpath.mp3"));
+    MainWindow::player->play();
     QWidget* par=this->parentWidget();
     par->show();
     Oliver::pos=0;

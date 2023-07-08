@@ -14,9 +14,12 @@ class information : public QWidget
 public:
     explicit information(QWidget *parent = nullptr);
     ~information();
+signals:
+    void conti();
 
 private slots:
     void on_pushButton_clicked();
+
 
 private:
     Ui::information *ui;
