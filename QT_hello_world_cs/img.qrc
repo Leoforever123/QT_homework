@@ -90,4 +90,24 @@
         <file>img/map/rolig_village_beach3.png</file>
         <file>img/map/rolig_village_beach4.png</file>
     </qresource>
+    <qresource prefix="/animation">
+        <file>img/character/run1-l.png</file>
+        <file>img/character/run1-r.png</file>
+        <file>img/character/run2-l.png</file>
+        <file>img/character/run2-r.png</file>
+        <file>img/character/run3-l.png</file>
+        <file>img/character/run3-r.png</file>
+        <file>img/character/static-l.png</file>
+        <file>img/character/static-r.png</file>
+        <file>img/character/SWORD-L(1).png</file>
+        <file>img/character/SWORD-L(2).png</file>
+        <file>img/character/SWORD-L(3).png</file>
+        <file>img/character/SWORD-L(4).png</file>
+        <file>img/character/SWORD-L(5).png</file>
+        <file>img/character/SWORD-R(1).png</file>
+        <file>img/character/SWORD-R(2).png</file>
+        <file>img/character/SWORD-R(3).png</file>
+        <file>img/character/SWORD-R(4).png</file>
+        <file>img/character/SWORD-R(5).png</file>
+    </qresource>
 </RCC>

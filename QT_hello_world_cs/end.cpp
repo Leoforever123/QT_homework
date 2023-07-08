@@ -3,6 +3,7 @@
 #include "mainwindow.h"
 #include "oliver.h"
 #include "set_context.h"
+#include "file.h"
 
 end::end(QWidget *parent) :
     QWidget(parent),
@@ -27,8 +28,8 @@ void end::on_pushButton_clicked()
     MainWindow::player->stop();
     Oliver::pos=0;
     MainWindow *window=new MainWindow;
-
-
+    Oliver::whethernew=1;
+    setfile("data.txt");
     window->show();
     delete this->parentWidget();
 

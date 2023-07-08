@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>soulplace</class>
+ <widget class="QMainWindow" name="soulplace">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>576</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuenter">
+    <property name="title">
+     <string>隐藏</string>
+    </property>
+    <addaction name="actionenter"/>
+   </widget>
+   <addaction name="menuenter"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionjinru">
+   <property name="text">
+    <string>进入灵魂圣殿</string>
+   </property>
+  </action>
+  <action name="actionenter">
+   <property name="text">
+    <string>进入灵魂圣殿</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

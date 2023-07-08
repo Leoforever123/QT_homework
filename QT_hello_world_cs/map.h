@@ -26,6 +26,8 @@ private slots:
 
     void on_banished_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::map *ui;
 };

@@ -11,6 +11,7 @@
 #include "mainwindow.h"
 #include <QMediaPlayer>
 #include <QAudioOutput>
+#include "soulplace.h"
 
 map::map(QWidget *parent) :
     QDialog(parent),
@@ -146,6 +147,33 @@ void map::on_banished_clicked()
     else
     {
         banished* ice=new banished();
+        ice->show();
+        delete this->parentWidget()->parentWidget();
+    }
+}
+
+
+void map::on_pushButton_clicked()
+{
+    Oliver::audio->play(2);
+    if(Oliver::pos!=8)
+    {
+        Oliver::pos=8;
+        soulplace* ice=new soulplace();
+        load* loadbar=new load();
+        loadbar->set_loadbar_text(8);
+        this->hide();
+        loadbar->show();
+        connect(loadbar,&load::full,[loadbar,this,ice](){
+            delete loadbar;
+            ice->show();
+            delete this->parentWidget()->parentWidget();
+        });
+        return;
+    }
+    else
+    {
+        soulplace* ice=new soulplace();
         ice->show();
         delete this->parentWidget()->parentWidget();
     }

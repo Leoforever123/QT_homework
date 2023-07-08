@@ -88,6 +88,25 @@
     </size>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>170</y>
+     <width>92</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>灵魂圣地</string>
+   </property>
+  </widget>
  </widget>
  <resources>
   <include location="img.qrc"/>

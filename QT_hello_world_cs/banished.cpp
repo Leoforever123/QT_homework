@@ -131,6 +131,7 @@ void banished::on_pushButton_3_clicked()
     dialog* enddia2=new dialog(this);
     if(Oliver::strong_level==2&&Oliver::courage_condition==1&&Oliver::skill_type==2&&Oliver::sword_type==2)
     {
+        Oliver::metwithNPC[6]=1;
         dia2->set_text(39,1);
         enddia1->set_text(1,3);
         enddia2->set_text(2,3);

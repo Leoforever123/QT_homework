@@ -12,6 +12,7 @@ CONFIG += c++17
 
 SOURCES += \
     banished.cpp \
+    character.cpp \
     dialog.cpp \
     dialogue.cpp \
     effectaudio.cpp \
@@ -33,12 +34,15 @@ SOURCES += \
     pass.cpp \
     rolig_sea.cpp \
     rolig_village.cpp \
+    scene.cpp \
     settings.cpp \
     shop.cpp \
+    soulplace.cpp \
     status_show.cpp
 
 HEADERS += \
     banished.h \
+    character.h \
     dialog.h \
     dialogue.h \
     effectaudio.h \
@@ -60,9 +64,11 @@ HEADERS += \
     pass.h \
     rolig_sea.h \
     rolig_village.h \
+    scene.h \
     set_context.h \
     settings.h \
     shop.h \
+    soulplace.h \
     status_show.h
 
 FORMS += \
@@ -84,8 +90,10 @@ FORMS += \
     pass.ui \
     rolig_sea.ui \
     rolig_village.ui \
+    scene.ui \
     settings.ui \
     shop.ui \
+    soulplace.ui \
     status_show.ui
 
 # Default rules for deployment.
