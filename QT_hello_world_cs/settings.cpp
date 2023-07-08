@@ -5,7 +5,7 @@
 #include <QAudioOutput>
 #include <QDebug>
 
-int settings::volume = 50;
+int settings::volume = 30;
 settings::settings(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::settings)

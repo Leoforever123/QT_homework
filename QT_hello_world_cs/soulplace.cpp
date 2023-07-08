@@ -31,8 +31,10 @@ soulplace::soulplace(QWidget *parent) :
             return;
         }
         else{
-            scene *myscene= new scene(this);
+            scene *myscene= new scene();
             myscene->show();
+            this->hide();
+            delete this;
         }
     });
 }

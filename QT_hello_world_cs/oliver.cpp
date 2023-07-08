@@ -106,7 +106,12 @@ Oliver::Oliver(QWidget *parent)
         show_map->exec();
         }
         else{
-        QMessageBox::warning(this,"警告","你被黑暗力量控制了，暂时不能离开这里");
+        if(Oliver::metwithNPC[6]==0)
+            QMessageBox::warning(this,"警告","你被黑暗力量控制了，暂时不能离开这里");
+        else{
+            map* show_map=new map(this);
+            show_map->exec();
+        }
         }
     });
 }

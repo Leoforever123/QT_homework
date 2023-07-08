@@ -4,6 +4,7 @@
 #include "set_context.h"
 #include <QDebug>
 #include "dialog.h"
+#include "soulplace.h"
 
 
 scene::scene(QWidget *parent)
@@ -26,6 +27,8 @@ scene::scene(QWidget *parent)
     dialog* dia=new dialog(this);
     dia->set_text(3,2);
     dia->exec();
+    ui->pushButton->setShortcut(QKeySequence());
+
 }
 
 scene::~scene()
@@ -81,7 +84,7 @@ void scene::keyPressEvent(QKeyEvent *ev){
             //            qDebug()<<"R";
         }
         break;
-    case Qt::Key_Space:
+    case Qt::Key_W:
         if(ev->isAutoRepeat()==false)
         {
             braver->jump();
@@ -134,7 +137,8 @@ void scene::change_click_flag(){
 
 void scene::on_pushButton_clicked()
 {
-    this->parentWidget()->show();
+    soulplace* place = new soulplace();
+    place->show();
     this->hide();
     delete this;
 }

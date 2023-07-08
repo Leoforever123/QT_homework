@@ -31,6 +31,9 @@
    <property name="text">
     <string>离开</string>
    </property>
+   <property name="shortcut">
+    <string>Del</string>
+   </property>
   </widget>
  </widget>
  <resources/>

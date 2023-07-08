@@ -21,7 +21,11 @@ banished::banished(QWidget *parent) :
     //初始化主角
     Oliver* oliver=new Oliver(this);
     set_status(ui->statusbar,this);
-
+    ui->pushButton_2->hide();
+    ui->pushButton_3->hide();
+    ui->pushButton->hide();
+    if(Oliver::metwithNPC[6]==0){
+        ui->pushButton->show();
     //初始化邪教徒
     set_context(ui->widget,":/character/img/character/badman.png");
     set_context(ui->widget_2,":/character/img/character/badman.png");
@@ -34,8 +38,6 @@ banished::banished(QWidget *parent) :
     ui->widget_7->hide();
 
     //设置按钮
-    ui->pushButton_2->hide();
-    ui->pushButton_3->hide();
     ui->widget_8->hide();
     time=new QTimer(this);
     postimer = new QTimer(this);
@@ -46,6 +48,7 @@ banished::banished(QWidget *parent) :
     MainWindow::player->stop();
     MainWindow::player->setSource(QUrl("qrc:/mp3/mp3/06 - Hornet.mp3"));
     MainWindow::player->play();
+    }
 }
 
 banished::~banished()
